@@ -8,7 +8,7 @@ pip install -r requirements.txt
 # run model training
 python3 training_pipeline.py hydra.job.chdir=True
 ```
-## Project Organization
+## Project Organization:
 ```shell
 ├── README.md
 ├── artifacts
