@@ -4,7 +4,7 @@
 cd main
 # requirements setting
 pip install -r requirements.txt
-# then you need to change the path to the data in the config.yaml
+# then you need to change input_data_path in the config.yaml
 # run model training
 python3 training_pipeline.py hydra.job.chdir=True
 ```
