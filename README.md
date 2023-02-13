@@ -2,10 +2,10 @@
 ## Usage:
 ```shell
 cd main
-# установка зависимостей
+# requirements setting
 pip install -r requirements.txt
-# далее необходимо изменить путь до данных в файле конфигурации
-# запуск обучения модели
+# then you need to change the path to the data in the config.yaml
+# run model training
 python3 training_pipeline.py hydra.job.chdir=True
 ```
 ## Project Organization
