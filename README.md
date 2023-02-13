@@ -9,7 +9,7 @@ pip install -r requirements.txt
 python3 training_pipeline.py hydra.job.chdir=True
 ```
 ## Структура проекта
------
+```shell
 ├── README.md
 ├── artifacts
 ├── configs
@@ -34,6 +34,5 @@ python3 training_pipeline.py hydra.job.chdir=True
 ├── notebooks
 │   └── Retrospective.ipynb
 └── requirements.txt
-
-------
+```
 
