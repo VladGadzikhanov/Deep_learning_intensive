@@ -11,7 +11,6 @@ python3 training_pipeline.py hydra.job.chdir=True
 ## Project Organization
 ```shell
 ├── README.md
-├── __pycache__
 ├── artifacts
 │   ├── 2023-02-13_03-09-36
 │   │   ├── metrics.json
@@ -32,20 +31,11 @@ python3 training_pipeline.py hydra.job.chdir=True
 │   └── laba-2.pdf
 ├── main
 │   ├── data
-│   │   ├── __pycache__
-│   │   │   ├── dataset.cpython-310.pyc
-│   │   │   └── make_dataset.cpython-310.pyc
 │   │   ├── dataset.py
 │   │   └── make_dataset.py
 │   ├── entities
-│   │   ├── __pycache__
-│   │   │   └── entities.cpython-310.pyc
 │   │   └── entities.py
 │   ├── model
-│   │   ├── __pycache__
-│   │   │   ├── model.cpython-310.pyc
-│   │   │   ├── model_fit_predict.cpython-310.pyc
-│   │   │   └── predictions_preprocessing.cpython-310.pyc
 │   │   ├── model.py
 │   │   ├── model_fit_predict.py
 │   │   └── predictions_preprocessing.py
