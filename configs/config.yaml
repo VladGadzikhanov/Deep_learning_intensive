@@ -1,0 +1,29 @@
+defaults:
+  - general: general
+  - override hydra/hydra_logging: colorlog
+  - override hydra/job_logging: colorlog
+
+paths_params:
+  input_data_path: "/Users/vladislavgadzihanov/PycharmProjects/Deep_learning_intensive/data/captcha_images_v2"
+  output_model_path: "ocr_model.pth"
+  output_metrics_path: "metrics.json"
+
+training_params:
+  epochs_num: 50
+  batch_size: 4
+  learning_rate: 3e-4
+  factor: 0.8
+  patience: 5
+  device: "cpu"
+
+
+splitting_params:
+  test_size: 0.2
+  random_state: ${general.random_state}
+
+hydra:
+  run:
+    dir: ../artifacts/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: ../artifacts/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${hydra.job.override_dirname}
