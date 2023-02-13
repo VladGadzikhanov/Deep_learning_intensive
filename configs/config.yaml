@@ -13,7 +13,7 @@ training_params:
   epochs_num: 50
   batch_size: 4
   learning_rate: 3e-4
-  factor: 0.8
+  factor: 0.9
   patience: 5
   device: "cpu"
 
