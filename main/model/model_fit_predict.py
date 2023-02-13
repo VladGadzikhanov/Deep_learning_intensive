@@ -1,5 +1,6 @@
 import json
 import torch
+import pandas as pd
 from tqdm import tqdm
 
 
@@ -46,3 +47,14 @@ def save_model(model, output_model_path):
 def save_metrics(metrics, output_metrics_path):
     with open(output_metrics_path, "w") as metrics_file:
         json.dump(metrics, metrics_file)
+
+
+def save_predictions(test_orig_targets, test_decoded_preds, output_predictions_path):
+    df = pd.DataFrame(
+        {
+            "test_orig_targets": test_orig_targets,
+            "test_decoded_preds": test_decoded_preds,
+        }
+    )
+
+    df.to_csv(output_predictions_path, index=False)

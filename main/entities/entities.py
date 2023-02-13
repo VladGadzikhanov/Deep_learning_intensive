@@ -11,6 +11,7 @@ class PathsConfig:
     input_data_path: str
     output_model_path: str
     output_metrics_path: str
+    output_predictions_path: str
 
 
 @dataclass()

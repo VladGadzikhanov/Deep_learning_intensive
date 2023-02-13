@@ -22,13 +22,14 @@ from model.model_fit_predict import (
     save_metrics,
     train_model,
     evaluate_model,
+    save_predictions,
 )
 
 config_store = ConfigStore.instance()
 config_store.store(name="config", node=entities.Config)
 
 
-def get_path(filename: str) -> str:
+def get_path(filename):
     return os.path.join(os.getcwd(), filename)
 
 
@@ -137,6 +138,11 @@ def run_training(config: DictConfig):
     save_metrics(
         metrics=metrics,
         output_metrics_path=get_path(config.paths_params.output_metrics_path),
+    )
+    save_predictions(
+        test_orig_targets=test_orig_targets,
+        test_decoded_preds=test_decoded_preds,
+        output_predictions_path=config.paths_params.output_predictions_path,
     )
 
 
