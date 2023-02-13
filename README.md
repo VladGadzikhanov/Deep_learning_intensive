@@ -1,5 +1,5 @@
-# Финальное задание по курсу DL в MADE Big Data Academy
-## Как использовать:
+# Final DL course assignment at MADE Big Data Academy
+## Usage:
 ```shell
 cd main
 # установка зависимостей
@@ -8,7 +8,7 @@ pip install -r requirements.txt
 # запуск обучения модели
 python3 training_pipeline.py hydra.job.chdir=True
 ```
-## Структура проекта
+## Project Organization
 ```shell
 ├── README.md
 ├── artifacts
