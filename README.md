@@ -2,7 +2,7 @@
 ## Usage:
 ```shell
 cd main
-# requirements setting
+# install requirements 
 pip install -r requirements.txt
 # then you need to change input_data_path field in the config.yaml
 # run model training
